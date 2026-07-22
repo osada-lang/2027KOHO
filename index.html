@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2027年度 春日井JC広報委員会 提案資料</title>
+    <!-- Google Fonts: Inter & Noto Sans JP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="jc-tag">2027年度 春日井青年会議所</span>
+                <h1>広報委員会 提案資料</h1>
+            </div>
+            <nav class="tab-navigation">
+                <button class="nav-btn active" data-tab="flyer">
+                    <i class="fa-solid fa-file-image"></i> チラシフォーマット
+                </button>
+                <button class="nav-btn" data-tab="lp">
+                    <i class="fa-solid fa-mobile-screen-button"></i> LP見本
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="content-container">
+
+        <!-- Tab 1: チラシフォーマット -->
+        <section id="flyer" class="tab-content active">
+            <div class="flyer-container">
+                <div class="flyer-info">
+                    <h2>共通チラシフォーマット見本</h2>
+                    <p class="description">
+                        広報委員会が統一して提供するA4縦型チラシのフォーマット見本です。<br>
+                        上部には春日井JCの統一ロゴとタイトルエリア、下部にはお問合せ情報と3つのQRコード（Instagram、詳細LP、Googleフォーム）を配置しています。
+                    </p>
+                    
+                    <div class="feature-bullets">
+                        <div class="bullet">
+                            <i class="fa-solid fa-crop-simple"></i>
+                            <div>
+                                <strong>デザインに「全振り」できる余白</strong>
+                                <p>中央の白いエリアには、各事業のテーマに沿ったインパクトのあるビジュアルやキャッチコピーのみを大きく配置できます。細かな説明や申し込み要項はすべてLPへ逃がす設計です。</p>
+                            </div>
+                        </div>
+                        <div class="bullet">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <div>
+                                <strong>3つの役割を持つQRコード</strong>
+                                <p><strong>Instagram:</strong> 日常の活動や直近の様子を伝え、ファン化を狙います。<br>
+                                <strong>詳細LP:</strong> チラシに載り切らない詳細スケジュールや登壇者プロフィールなどを掲載。<br>
+                                <strong>Google Form:</strong> スムーズな申し込みを促す直行ルートです。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-box">
+                        <p class="tip-text"><i class="fa-solid fa-lightbulb"></i> チラシから詳細LPへのシームレスな体験を確認しましょう！</p>
+                        <button class="action-btn-primary" onclick="switchTab('lp')">
+                            連動LP（ランディングページ）見本へ <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flyer-preview-pane">
+                    <span class="preview-label">A4 チラシレイアウト (画像生成プロトタイプ)</span>
+                    <div class="flyer-image-wrapper">
+                        <img src="kasugai_jc_flyer_template.jpg" alt="春日井JC チラシテンプレート" class="flyer-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 3: LP見本 -->
+        <section id="lp" class="tab-content">
+            <div class="lp-container">
+                <!-- 左側：スマホ風モックアップ -->
+                <div class="mockup-side">
+                    <div class="smartphone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            
+                            <!-- スマホ内のLPコンテンツを iframe 読み込みに -->
+                            <iframe src="lp.html" style="width: 100%; height: 100%; border: none; border-radius: 30px;" title="LP見本"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右側：LP役割説明 -->
+                <div class="lp-explain-side">
+                    <h2>連動LP（ランディングページ）の役割</h2>
+                    <p class="description">
+                        チラシのQRコードから遷移する詳細・申込用LPのプロトタイプです。<br>
+                        スマートフォンでの読みやすさ、申し込みのしやすさに特化したレスポンシブデザインになっています。
+                    </p>
+                    
+                    <div class="explain-cards">
+                        <div class="explain-card">
+                            <i class="fa-solid fa-mobile-retro"></i>
+                            <div>
+                                <h4>モバイルファースト設計</h4>
+                                <p>イベント参加者の8割以上がスマートフォンからアクセスします。画面の幅に最適化された高速表示仕様で、離脱を防ぎます。</p>
+                            </div>
+                        </div>
+                        <div class="explain-card">
+                            <i class="fa-solid fa-list-check"></i>
+                            <div>
+                                <h4>申し込み完了率の向上</h4>
+                                <p>チラシに細かな要項（地図、注意事項など）を盛り込みすぎると申込への心理的ハードルが上がります。LP側で段階的に情報を整理して見せることで、スムーズな申込ボタン押下へと導きます。</p>
+                            </div>
+                        </div>
+                        <div class="explain-card">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <div>
+                                <h4>広報効果の「可視化」</h4>
+                                <p>QRコード経由でのアクセス数や申し込み人数を計測することで、今回の広報計画がどれだけの集客効果を生んだかを数値として上層部に報告可能です。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>2027年度 公益社団法人春日井青年会議所 広報委員会 提案ドキュメント</p>
+    </footer>
+
+    <!-- Tab Logic Script -->
+    <script>
+        function switchTab(tabId) {
+            // Remove active classes
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Add active class to clicked button and target tab
+            const activeBtn = document.querySelector(`[data-tab="${tabId}"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+
+            const activeContent = document.getElementById(tabId);
+            if (activeContent) activeContent.classList.add('active');
+
+            // Scroll to top of content
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.querySelectorAll('.nav-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                switchTab(tabId);
+            });
+        });
+    </script>
+</body>
+</html>
