@@ -1204,8 +1204,8 @@
 
         <!-- Top Announcement Ribbon -->
         <div class="top-banner">
-            <i class="fa-solid fa-gift"></i>
-            <span>春日井JC広報委員会 特別企画｜ご家族への非公式謝恩会</span>
+            <i class="fa-solid fa-calendar-check" style="color: #fde047;"></i>
+            <span>【今週日曜・昼開催】春日井JC広報委員会 特別企画｜ご家族への非公式謝恩会</span>
         </div>
 
         <!-- Hero Section -->
@@ -1219,10 +1219,16 @@
                 </span>
             </div>
 
-            <!-- Free Gift Special Badge -->
-            <div class="free-gift-badge">
-                <i class="fa-solid fa-gift"></i>
-                <span>参加費完全無料 ｜ スタッフからのプレゼント</span>
+            <!-- Date & Free Gift Badges -->
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
+                <div class="free-gift-badge" style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3); margin-bottom: 0;">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>今週の日曜日（お昼 11:00〜）開催！</span>
+                </div>
+                <div class="free-gift-badge" style="margin-bottom: 0;">
+                    <i class="fa-solid fa-gift"></i>
+                    <span>参加費完全無料 ｜ スタッフからのプレゼント</span>
+                </div>
             </div>
 
             <h1 class="hero-title">
@@ -1245,15 +1251,15 @@
 
             <!-- Quick Stat Highlights -->
             <div class="quick-highlights-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <div class="highlight-item" style="border-color: #fda4af;">
+                    <span class="item-icon">📅</span>
+                    <span class="item-label">開催日</span>
+                    <span class="item-value" style="color: #e11d48;">今週日曜</span>
+                </div>
                 <div class="highlight-item">
                     <span class="item-icon">🎁</span>
                     <span class="item-label">参加費</span>
                     <span class="item-value" style="color: #d97706;">完全無料</span>
-                </div>
-                <div class="highlight-item">
-                    <span class="item-icon">🍖</span>
-                    <span class="item-label">極厚鉄板</span>
-                    <span class="item-value">約9mm厚</span>
                 </div>
                 <div class="highlight-item">
                     <span class="item-icon">👨‍👩‍👧‍👦</span>
@@ -1277,10 +1283,11 @@
 
             <div class="story-bubble">
                 <p class="story-p">
-                    普段遅くまでJC活動を支えてくれているご家族へ、<strong>「今すぐ感謝を伝えたい！」</strong>と急遽バージョンアップ！
+                    <strong>急で大変申し訳ないのですが……！</strong><br>
+                    普段遅くまでJC活動を支えてくれているご家族へ、<strong>「今すぐ感謝を伝えたい！」</strong>と思い立ち、<strong>今週の日曜日のお昼</strong>に急遽開催することになりました！
                 </p>
                 <p class="story-p">
-                    大人も子どもも笑顔になれる、春の特別な休日をお届けします。
+                    手ぶらでOK、大人も子どもも笑顔になれる春の特別な休日をお届けします。
                 </p>
                 
                 <!-- Free Gift Message Box -->
@@ -1614,6 +1621,13 @@
             </div>
 
             <div class="details-box">
+                <div class="detail-row" style="background-color: #fff1f2;">
+                    <div class="detail-label" style="color: #be123c;">日時</div>
+                    <div class="detail-value">
+                        <strong style="font-size: 0.98rem; color: #e11d48;">今週の日曜日 11:00 〜 13:30</strong><br>
+                        <span style="font-size: 0.74rem; color: #be123c;">※急なご案内で大変恐縮ですが、ランチタイムに手ぶらでお越しください！午後は自由解散＆そのまま犬山観光へGOできます。</span>
+                    </div>
+                </div>
                 <div class="detail-row" style="background-color: #fffbeb;">
                     <div class="detail-label" style="color: #b45309;">参加費</div>
                     <div class="detail-value">
@@ -1670,8 +1684,8 @@
         <!-- Sticky Floating Bottom CTA Bar -->
         <div class="bottom-action-bar">
             <div class="bottom-meta">
-                <span class="date-text" style="color: #d97706; font-weight: 800;"><i class="fa-solid fa-gift"></i> 参加費無料（スタッフ招待）</span>
-                <span class="venue-text">週末ファミリーBBQ</span>
+                <span class="date-text" style="color: #e11d48; font-weight: 800;"><i class="fa-regular fa-calendar-check"></i> 今週日曜 11:00〜</span>
+                <span class="venue-text">参加費無料 🎁 桃太郎公園</span>
             </div>
             <button class="cta-button" onclick="openRsvpModal()" id="cta-rsvp-btn">
                 <i class="fa-brands fa-line" style="font-size: 1.25rem;"></i>
@@ -1687,8 +1701,9 @@
             <div class="sheet-handle"></div>
             <h3 class="sheet-title">参加連絡のご案内</h3>
             <p class="sheet-p">
-                <strong style="color: #d97706; font-size: 0.9rem; display: block; margin-bottom: 4px;">🎉 参加費は完全無料です！</strong>
-                お肉や冷えたドリンクの仕込み・準備のため、春日井JC広報委員会のLINEグループまたは委員長（平松友太くん）へ参加人数をお知らせください！
+                <strong style="color: #e11d48; font-size: 0.9rem; display: block; margin-bottom: 2px;">【今週の日曜日（お昼）開催！】</strong>
+                <span style="color: #d97706; font-size: 0.82rem; font-weight: 700; display: block; margin-bottom: 6px;">🎉 参加費は完全無料です</span>
+                急なお声がけで大変恐縮ですが、お肉や冷えたドリンクの準備のため、春日井JC広報委員会のLINEグループまたは委員長（平松友太くん）へ参加人数をお知らせください！
             </p>
 
             <div class="line-action-box">
